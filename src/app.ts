@@ -1,6 +1,9 @@
+import { PromptService } from './core/prompt/prompt.service';
+
 export class App {
-  run(): void {
-    console.log('app run');
+  async run(): Promise<void> {
+    const res = await new PromptService().input<number>('Number', 'number');
+    console.log(res);
   }
 }
 
