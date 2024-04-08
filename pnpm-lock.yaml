@@ -20,7 +20,7 @@ devDependencies:
     specifier: ^29.5.11
     version: 29.5.12
   '@types/node':
-    specifier: ^20.10.6
+    specifier: ^20.12.5
     version: 20.12.5
   '@types/uuid':
     specifier: ^9.0.7
