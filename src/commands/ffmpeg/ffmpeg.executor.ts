@@ -12,10 +12,10 @@ export class FfmpegExecutor extends CommandExecutor<IFfmpegInput> {
 
   private promptService: PromptService = new PromptService();
 
-  // TODO: fis useless constructor
-  constructor(logger: IStreamLogger) {
-    super(logger);
-  }
+  // TODO: fix useless constructor ?? why work without this???
+  // constructor(logger: IStreamLogger) {
+  //   super(logger);
+  // }
 
   protected async prompt(): Promise<IFfmpegInput> {
     const width = await this.promptService.input<number>('Height', 'number');

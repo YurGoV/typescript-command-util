@@ -1,6 +1,6 @@
-import { ISteramLogger } from '../../core/handlers/stream-logger.interface';
+import { IStreamLogger } from '../../core/handlers/stream-logger.interface';
 
-export class ConsoleLogger implements ISteramLogger {
+export class ConsoleLogger implements IStreamLogger {
   static logger: ConsoleLogger;
 
   public static getInstance(): ConsoleLogger {
